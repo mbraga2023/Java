@@ -31,10 +31,9 @@ public class MenuView extends javax.swing.JFrame {
     private void initComponents() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+             
         
-        
-        
-    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -139,3 +138,4 @@ controller.navegarParaFormCadastro();
     private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }
+
