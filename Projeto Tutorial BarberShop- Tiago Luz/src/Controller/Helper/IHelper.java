@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package Controller.Helper;
-
-import static javafx.scene.input.KeyCode.T;
-
-
-
 /**
  *
  * @author tiago
