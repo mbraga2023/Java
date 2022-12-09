@@ -1,6 +1,25 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
+ * The MIT License
+ *
+ * Copyright 2021 professor José de Assis.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
  */
 package br.com.infox.telas;
 
@@ -9,10 +28,15 @@ import br.com.infox.dao.ModuloConexao;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
 
 /**
+ * Tela de Cadastro de Ordem de Serviços
  *
- * @author Michel2
+ * @author José de Assis
+ * @version 1.1
  */
 public class TelaOS extends javax.swing.JInternalFrame {
     
@@ -201,6 +225,22 @@ public class TelaOS extends javax.swing.JInternalFrame {
         
     }
 
+    
+    private void imprimir_os(){
+   int confirma = JOptionPane.showConfirmDialog(null, "Confirma essa impressão?", "atenção", JOptionPane.YES_NO_OPTION);
+    if (confirma == JOptionPane.YES_OPTION) {
+        try {
+            JasperPrint print = JasperFillManager.fillReport ("C:/reports/os.jasper", null, conexao);
+            
+            JasperViewer.viewReport (print,false);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+    } else {
+    }
+}
     //limpar campos e gerenciar  botões
     private void limpar() {
         //essas linhs são usadas para limpar os campos
