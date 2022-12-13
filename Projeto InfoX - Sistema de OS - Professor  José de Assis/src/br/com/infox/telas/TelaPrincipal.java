@@ -28,13 +28,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
-import javax.swing.JFrame;
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.view.JasperViewer;
+
 
 /**
  * Tela de Principal
@@ -226,7 +220,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void relatorioClientes() {
+    /*private void relatorioClientes() {
         int confirma = JOptionPane.showConfirmDialog(null, "Confirma a emissão deste relatório?", "Atenção!", JOptionPane.YES_NO_OPTION);
         if (confirma == JOptionPane.YES_OPTION) {
             try {
@@ -243,13 +237,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         }
-    }
+    }*/
 
     /**
      * Método responsável pela emissão do relatório de serviços com
      * JasperReports
      */
-    private void relatorioServicos() {
+    /*private void relatorioServicos() {
         int confirma = JOptionPane.showConfirmDialog(null, "Confirma a emissão deste relatório?", "Atenção!", JOptionPane.YES_NO_OPTION);
         if (confirma == JOptionPane.YES_OPTION) {
             try {
@@ -266,7 +260,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         }
-    }
+    }*/
 
 
     private void menCadCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menCadCliActionPerformed
@@ -315,13 +309,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void menRelCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menRelCliActionPerformed
 
-        relatorioClientes();
+      //  relatorioClientes();
 
 
     }//GEN-LAST:event_menRelCliActionPerformed
 
     private void menRelSerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menRelSerActionPerformed
-        relatorioServicos();
+       // relatorioServicos();
     }//GEN-LAST:event_menRelSerActionPerformed
 
     /**

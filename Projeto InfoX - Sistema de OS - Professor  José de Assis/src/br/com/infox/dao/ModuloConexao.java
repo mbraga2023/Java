@@ -42,9 +42,9 @@ public class ModuloConexao {
     public static Connection conector() {
         java.sql.Connection conexao = null;
 
-        String url = "jdbc:mysql://localhost:3306/dbinfox?characterEncoding=utf-8";
-        String user = "dba";
-        String password = "infox@123456";
+        String url = "jdbc:mysql://localhost:3306/infox?characterEncoding=utf-8";
+        String user = "root";
+        String password = "";
 
         try {
 

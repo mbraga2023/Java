@@ -177,7 +177,7 @@
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <Component id="desktop" pref="627" max="32767" attributes="0"/>
+              <Component id="desktop" pref="592" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>

@@ -28,9 +28,9 @@ import br.com.infox.dao.ModuloConexao;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
-import net.sf.jasperreports.engine.JasperFillManager;
+/*import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.view.JasperViewer;
+import net.sf.jasperreports.view.JasperViewer;*/
 
 /**
  * Tela de Cadastro de Ordem de Serviços
@@ -226,7 +226,7 @@ public class TelaOS extends javax.swing.JInternalFrame {
     }
 
     
-    private void imprimir_os(){
+    /*private void imprimir_os(){
    int confirma = JOptionPane.showConfirmDialog(null, "Confirma essa impressão?", "atenção", JOptionPane.YES_NO_OPTION);
     if (confirma == JOptionPane.YES_OPTION) {
         try {
@@ -240,7 +240,7 @@ public class TelaOS extends javax.swing.JInternalFrame {
         
     } else {
     }
-}
+}*/
     //limpar campos e gerenciar  botões
     private void limpar() {
         //essas linhs são usadas para limpar os campos
@@ -640,7 +640,7 @@ public class TelaOS extends javax.swing.JInternalFrame {
 
     private void btnOsAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOsAdicionarActionPerformed
         // chamar o metodo emitir_os
-        emitir_os();
+       emitir_os();
     }//GEN-LAST:event_btnOsAdicionarActionPerformed
 
     private void btnOsPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOsPesquisarActionPerformed
